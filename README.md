@@ -56,4 +56,4 @@ Due to limitations in writing selectors for anchors based on their href property
   - [Icon Source](https://iconic.app/dashboard/)
  
 ## Thank you
-@sailKite in Obsidian Discord (https://discord.gg/obsidianmd) for helping me out and providing a first SCSS draft of my first CSS version.
+[@sailKiteV](https://github.com/sailKiteV) in Obsidian Discord (https://discord.gg/obsidianmd) for helping me out and providing a first SCSS draft of my initial CSS version.
