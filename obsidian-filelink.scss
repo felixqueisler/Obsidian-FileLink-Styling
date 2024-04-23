@@ -86,10 +86,11 @@ a.internal-link:is(#{$all-filetype-selectors}) {
 	margin-right: var(--size-2-3);
 	border-radius: var(--radius-s);
 	transition: background-color 0.1s ease, color 0.1s ease;
-	text-decoration: none !important;
+	text-decoration: none;
 	background-color: var(--background-primary-alt);
 
 	&:hover {
+		text-decoration: none;
 		background-color: var(--background-modifier-hover);
 	}
 
