@@ -11,6 +11,12 @@ Improves the way linked files are displayed in Obsidian (reading mode), making t
 ## Screenshot
 ![Feature Preview](/assets/screenshot-preview.png)
 
+## Usage
+1. Download the css-file or compile your own version using scss/sass compiler.
+2. Open Obsidian settings > appearance > CSS Snippets and move the file to the snippet folder.
+3. Activate the snippet in the Obsidian settings.
+Read more here: [Obsidian Help](https://help.obsidian.md/Extending+Obsidian/CSS+snippets)
+
 ## Supported filetypes
 _As of now. Ask for more with GitHub's issue feature._
 Due to limitations in writing selectors for anchors based on their href property, filetypes have to be set specifially.
