@@ -1,0 +1,36 @@
+/* CSS to style PDF links */
+a[href*="."]:not([href$=".txt"]):not([href$=".md"]):not([href$="/"]):not([href*="?"]):not([href*="#"]).internal-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	padding-left: 7px;
+	padding-right: 11px;
+	margin-top: var(--size-2-3);
+	margin-right: var(--size-2-3);
+	border-radius: var(--radius-s);
+	transition: background-color 0.1s ease;
+	transition: color 0.1s ease;
+	text-decoration: none;
+	background-color: var(--background-primary-alt);
+}
+
+a[href*="."]:not([href$=".txt"]):not([href$=".md"]):not([href$="/"]):not([href*="?"]):not([href*="#"]):hover {
+	background-color: var(--background-modifier-hover);
+}
+a[href*="."]:not([href$=".txt"]):not([href$=".md"]):not([href$="/"]):not([href*="?"]):not([href*="#"]):before {
+	--iconic-size: 24px;
+	content:'';
+	color: inherit;
+	background-color: currentColor;
+	mask-position: center;
+	mask-size: var(--iconic-size);
+	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M7.75 19.25H16.25C17.3546 19.25 18.25 18.3546 18.25 17.25V9L14 4.75H7.75C6.64543 4.75 5.75 5.64543 5.75 6.75V17.25C5.75 18.3546 6.64543 19.25 7.75 19.25Z'/%3E%3Cpath stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M18 9.25H13.75V5'/%3E%3C/svg%3E");
+	/* https://iconic.app/file/ */
+	/* Encoded with https://yoksel.github.io/url-encoder/ */
+	mask-repeat: no-repeat;
+	display: inline-block;
+	width: var(--iconic-size);
+	height: var(--iconic-size);
+	margin-right: var(--size-4-1);
+}
