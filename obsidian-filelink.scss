@@ -68,6 +68,7 @@ $all-filetype-selectors: "";
 
 	a.internal-link:is(#{$group-filetype-selectors}):before {
 		mask-image: url("#{$icon-data}");
+		-webkit-mask-image: url("#{$icon-data}");
 	}
 }
 
@@ -101,8 +102,11 @@ a.internal-link:is(#{$all-filetype-selectors}) {
 		color: inherit;
 		background-color: currentColor;
 		mask-position: center;
+		-webkit-mask-position: center;
 		mask-size: var(--iconic-size);
+		-webkit-mask-size: var(--iconic-size);
 		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
 		display: inline-block;
 		width: var(--iconic-size);
 		height: var(--iconic-size);
