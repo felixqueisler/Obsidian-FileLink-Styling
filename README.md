@@ -1,5 +1,5 @@
 # Obsidian-FileLink-Styling
-Improves the way linked files are displayed in Obsidian (reading mode), making them beautifully distinct from notes.
+Improves the way linked files are displayed in Obsidian (reading view), making them beautifully distinct from notes.
 
 ## Features
 * Beautiful simple button-style links for files
@@ -16,6 +16,7 @@ Improves the way linked files are displayed in Obsidian (reading mode), making t
 2. Open Obsidian settings > appearance > CSS Snippets and move the file to the snippet folder.
 3. Activate the snippet in the Obsidian settings.
 Read more here: [Obsidian Help](https://help.obsidian.md/Extending+Obsidian/CSS+snippets)
+4. Open your notes in reading view.
 
 ## Supported filetypes
 _As of now. Ask for more with GitHub's issue feature._
