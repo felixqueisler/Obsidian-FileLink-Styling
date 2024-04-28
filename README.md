@@ -61,6 +61,14 @@ Due to limitations in writing selectors for anchors based on their href property
 - **Design Files**
   - Extensions: `psd`, `ai`, `sketch`, `eps`, `indd`, `xcf`, `dwg`, `svg`, `fig`, `cdr`, `afdesign`, `stp`, `3ds`, `iges`, `max`
   - [Icon Source](https://iconic.app/dashboard/)
+
+- **Torrent Files**
+	- Extensions: `torrent`
+	- [Pro Icon Source](https://iconic.app/file-share/)
+
+- **External (Local Filesystem) Files**
+	- Extensions: *
+	- [Pro Icon Source](https://iconic.app/folder-share/)
  
 ## Thank you
 [@sailKiteV](https://github.com/sailKiteV) in Obsidian Discord (https://discord.gg/obsidianmd) for helping me out and providing a first SCSS draft of my initial CSS version.
