@@ -47,7 +47,7 @@ Due to limitations in writing selectors for anchors based on their href property
   - [Icon Source](https://iconic.app/zip-file/)
 
 - **Word Files**
-  - Extensions: `doc`, `docx`, `odt`, `rtf`, `docm`, `wps`
+  - Extensions: `txt`, `doc`, `docx`, `odt`, `rtf`, `docm`, `wps`
   - [Icon Source](https://iconic.app/file-text/)
 
 - **Spreadsheet Files**
