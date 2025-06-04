@@ -39,7 +39,7 @@ Due to limitations in writing selectors for anchors based on their href property
   - [Icon Source](https://iconic.app/headphones/)
 
 - **Image Files**
-  - Extensions: `jpg`, `jpeg`, `png`, `gif`, `bmp`, `tiff`, `svg`, `psd`, `webp`, `ico`, `heic`, `raw`, `arw`, `svgz`, `nef`, `orf`
+  - Extensions: `jpg`, `jpeg`, `png`, `gif`, `bmp`, `tiff`, `svg`, `psd`, `webp`, `ico`, `heic`, `raw`, `arw`, `svgz`, `nef`, `orf`,`pxd
   - [Icon Source](https://iconic.app/photo/)
 
 - **Archive Files**
