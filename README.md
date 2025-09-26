@@ -66,6 +66,10 @@ Due to limitations in writing selectors for anchors based on their href property
 	- Extensions: `torrent`
 	- [Pro Icon Source](https://iconic.app/file-share/)
 
+- **Route Files**
+	- Extensions: `gpx`, `kml`, `fit`, `tcx`
+	- [Pro Icon Source](https://iconic.app/map/)
+
 - **External (Local Filesystem) Files**
 	- Extensions: *
 	- [Pro Icon Source](https://iconic.app/folder-share/)
