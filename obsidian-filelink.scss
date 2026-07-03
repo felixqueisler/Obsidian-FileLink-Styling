@@ -89,9 +89,15 @@ $all-filetype-selectors: string.unquote(string.slice($all-filetype-selectors, 1,
 a.internal-link:is(#{$all-filetype-selectors}),
 a.external-link[href^="file:///"] {
 	// Make anchor look like a button
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 24px;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	min-width: 0;
+	max-width: var(--filelink-max-width, 100%);
 	padding: 5px;
 	padding-left: 7px;
 	padding-right: 11px;
@@ -120,6 +126,8 @@ a.external-link[href^="file:///"] {
 		width: var(--iconic-size);
 		height: var(--iconic-size);
 		margin-right: var(--size-4-1);
+		flex-shrink: 0;
+		vertical-align: middle;
 	}
 }
 
@@ -155,7 +163,10 @@ a.external-link[href^="file:///"] {
 		width: var(--iconic-size);
 		height: var(--iconic-size);
 		margin-left: var(--size-4-1);
+		flex-shrink: 0;
+		vertical-align: middle;
 	}
+
 }
 
 /* Copyright (C) Iconic

@@ -52,9 +52,15 @@ a.internal-link:is([href$=".gpx"], [href$=".fit"], [href$=".kml"], [href$=".tcx"
 
 a.internal-link:is([href$=".html"], [href$=".css"], [href$=".js"], [href$=".php"], [href$=".py"], [href$=".java"], [href$=".cpp"], [href$=".c"], [href$=".cs"], [href$=".rb"], [href$=".go"], [href$=".lua"], [href$=".swift"], [href$=".ts"], [href$=".json"], [href$=".xml"], [href$=".scss"], [href$=".sass"], [href$=".sh"], [href$=".asm"], [href$=".sql"], [href$=".r"], [href$=".pl"], [href$=".h"], [href$=".hpp"], [href$=".pdf"], [href$=".mp4"], [href$=".avi"], [href$=".mov"], [href$=".wmv"], [href$=".mkv"], [href$=".flv"], [href$=".mpeg"], [href$=".mpg"], [href$=".webm"], [href$=".vob"], [href$=".m4v"], [href$=".3gp"], [href$=".3g2"], [href$=".f4v"], [href$=".mp3"], [href$=".wav"], [href$=".aac"], [href$=".ogg"], [href$=".flac"], [href$=".alac"], [href$=".wma"], [href$=".m4a"], [href$=".ape"], [href$=".mid"], [href$=".midi"], [href$=".mpa"], [href$=".ogg"], [href$=".aif"], [href$=".jpg"], [href$=".jpeg"], [href$=".png"], [href$=".gif"], [href$=".bmp"], [href$=".tiff"], [href$=".svg"], [href$=".psd"], [href$=".webp"], [href$=".ico"], [href$=".heic"], [href$=".raw"], [href$=".arw"], [href$=".svgz"], [href$=".nef"], [href$=".orf"], [href$=".pxd"], [href$=".zip"], [href$=".rar"], [href$=".7z"], [href$=".tar"], [href$=".gz"], [href$=".bz2"], [href$=".xz"], [href$=".tar.gz"], [href$=".jar"], [href$=".iso"], [href$=".cab"], [href$=".rar5"], [href$=".dmg"], [href$=".txt"], [href$=".doc"], [href$=".docx"], [href$=".odt"], [href$=".rtf"], [href$=".docm"], [href$=".wps"], [href$=".pages"], [href$=".xls"], [href$=".xlsx"], [href$=".ods"], [href$=".csv"], [href$=".xlsm"], [href$=".xlt"], [href$=".xlm"], [href$=".numbers"], [href$=".ppt"], [href$=".pptx"], [href$=".odp"], [href$=".pps"], [href$=".pptm"], [href$=".key"], [href$=".psd"], [href$=".ai"], [href$=".sketch"], [href$=".eps"], [href$=".indd"], [href$=".xcf"], [href$=".dwg"], [href$=".svg"], [href$=".fig"], [href$=".cdr"], [href$=".stp"], [href$=".3ds"], [href$=".iges"], [href$=".max"], [href$=".afphoto"], [href$=".afdesign"], [href$=".afpub"], [href$=".figma"], [href$=".torrent"], [href$=".gpx"], [href$=".fit"], [href$=".kml"], [href$=".tcx"]),
 a.external-link[href^="file:///"] {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 24px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  max-width: var(--filelink-max-width, 100%);
   padding: 5px;
   padding-left: 7px;
   padding-right: 11px;
@@ -83,6 +89,8 @@ a.external-link[href^="file:///"]:before {
   width: var(--iconic-size);
   height: var(--iconic-size);
   margin-right: var(--size-4-1);
+  flex-shrink: 0;
+  vertical-align: middle;
 }
 
 a.external-link[href^="file:///"] {
@@ -113,6 +121,8 @@ a.external-link[href^="file:///"]:after {
   width: var(--iconic-size);
   height: var(--iconic-size);
   margin-left: var(--size-4-1);
+  flex-shrink: 0;
+  vertical-align: middle;
 }
 
 /* Copyright (C) Iconic
