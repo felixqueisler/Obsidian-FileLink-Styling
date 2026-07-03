@@ -108,9 +108,18 @@ a.external-link[href^="file:///"] {
 	text-decoration: none;
 	background-color: var(--background-primary-alt);
 
+	// Hide scrollbars for hover scrolling
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+	&::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Electron */
+	}
+
 	&:hover {
 		text-decoration: none;
 		background-color: var(--background-modifier-hover);
+		text-overflow: clip; /* Show full text by clipping ellipsis */
+		overflow-x: auto;   /* Make element horizontally scrollable */
 	}
 
 	// Display icon
@@ -128,6 +137,7 @@ a.external-link[href^="file:///"] {
 		margin-right: var(--size-4-1);
 		flex-shrink: 0;
 		vertical-align: middle;
+		margin-top: -2.5px;
 	}
 }
 
@@ -165,6 +175,7 @@ a.external-link[href^="file:///"] {
 		margin-left: var(--size-4-1);
 		flex-shrink: 0;
 		vertical-align: middle;
+		margin-top: -2.5px;
 	}
 
 }
